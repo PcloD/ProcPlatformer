@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e74bd62d-f370-4dbd-ac66-054710c23a52</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Content</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Animations\zombie-animations.aa" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Fonts\impact-32.fnt" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Fonts\montserrat-32.fnt" />
+    <None Include="$(MSBuildThisFileDirectory)Content\small-font.fnt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\adventure-gui-atlas.json" />
+    <None Include="$(MSBuildThisFileDirectory)Content\adventure-gui-skin.json" />
+    <None Include="$(MSBuildThisFileDirectory)Content\adventure-gui.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Animations\fireball.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Animations\motw.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Animations\zombie-atlas.json" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Animations\zombie.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Fonts\impact-32_0.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Fonts\montserrat-32_0.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\small-font_0.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\title-screen.json" />
+  </ItemGroup>
+</Project>

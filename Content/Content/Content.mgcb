@@ -1,0 +1,130 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:Build\bin
+/intermediateDir:Build\obj
+/platform:Android
+/config:
+/profile:HiDef
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\packages\MonoGame.Extended.Content.Pipeline.0.6.568\tools\MonoGame.Extended.Content.Pipeline.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin adventure-gui.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color16Bit
+/build:adventure-gui.png
+
+#begin adventure-gui-atlas.json
+/importer:TexturePackerJsonImporter
+/processor:TexturePackerProcessor
+/build:adventure-gui-atlas.json
+
+#begin small-font.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:small-font.fnt
+
+#begin small-font_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color16Bit
+/build:small-font_0.png
+
+#begin Fonts/impact-32.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/impact-32.fnt
+
+#begin Fonts/impact-32_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color16Bit
+/build:Fonts/impact-32_0.png
+
+#begin Fonts/montserrat-32.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/montserrat-32.fnt
+
+#begin Fonts/montserrat-32_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color16Bit
+/build:Fonts/montserrat-32_0.png
+
+#begin Animations/fireball.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Compressed
+/build:Animations/fireball.png
+
+#begin Animations/motw.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Compressed
+/build:Animations/motw.png
+
+#begin Animations/zombie-animations.aa
+/importer:AstridAnimatorImporter
+/processor:AstridAnimatorProcessor
+/build:Animations/zombie-animations.aa
+
+#begin Animations/zombie-atlas.json
+/importer:TexturePackerJsonImporter
+/processor:TexturePackerProcessor
+/build:Animations/zombie-atlas.json
+
+#begin Animations/zombie.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Compressed
+/build:Animations/zombie.png
+
