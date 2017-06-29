@@ -1,9 +1,12 @@
-﻿using GamePlatformer.Screens;
+﻿using System;
+using GamePlatformer.Screens;
 using GamePlatformer.Utils;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.BitmapFonts;
+using MonoGame.Extended.TextureAtlases;
+using MonoGame.Extended;
 
 namespace GamePlatformer
 {
@@ -17,6 +20,10 @@ namespace GamePlatformer
         private IPlatform platform;
 
         private GuiManager guiManager;
+
+        private GraphicsMetrics lastMetrics;
+
+        private Map map;
 
         public MainGame(IPlatform platform)
         {
@@ -55,7 +62,7 @@ namespace GamePlatformer
         {
             guiManager = new GuiManager(Content, Window, GraphicsDevice, platform, "Content/adventure-gui-skin.json");
 
-            guiManager.RegisterScreen<TitleScreen>();
+            guiManager.RegisterScreen(new TitleScreen(() => lastMetrics ));
 
             guiManager.ShowScreen<TitleScreen>();
         }
@@ -67,6 +74,13 @@ namespace GamePlatformer
             font = Content.Load<BitmapFont>("small-font");
 
             InitGUI();
+
+            InitMap();
+        }
+
+        private void InitMap()
+        {
+            map = new Map(GraphicsDevice, Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -75,6 +89,8 @@ namespace GamePlatformer
                 Exit();
 
             guiManager.Update(gameTime);
+
+            map.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -98,7 +114,12 @@ namespace GamePlatformer
             else
                 GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            map.Draw(gameTime);
+
             guiManager.Draw(gameTime);
+
+            lastMetrics = GraphicsDevice.Metrics;
+
 
             //guiRenderer.Begin();
             //{
