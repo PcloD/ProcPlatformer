@@ -48,6 +48,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GameModel\GameModel.csproj">
+      <Project>{33a39860-3653-4adf-be3c-edc399084896}</Project>
+      <Name>GameModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Libraries\Libraries.csproj">
       <Project>{e776d2b3-2008-4085-a3b0-6fb9381fb92b}</Project>
       <Name>Libraries</Name>

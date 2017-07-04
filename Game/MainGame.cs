@@ -6,6 +6,8 @@ using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.BitmapFonts;
 using Libraries.GUI;
 using Libraries.Input;
+using System;
+using GamePlatformer.Model;
 
 namespace GamePlatformer
 {
@@ -24,13 +26,30 @@ namespace GamePlatformer
 
         private Map map;
 
+        private GameModel gameModel;
+
         public MainGame(IPlatform platform)
         {
             this.platform = platform;
 
+            InitTime();
+
             InitGraphics();
 
             InitContent();
+
+            InitGameModel();
+        }
+
+        private void InitGameModel()
+        {
+            gameModel = new GameModel();
+        }
+
+        private void InitTime()
+        {
+            IsFixedTimeStep = true;
+            TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 60.0f); //Update runs at 60 fps
         }
 
         private void InitContent()
@@ -55,6 +74,8 @@ namespace GamePlatformer
                 graphics.IsFullScreen = true;
                 this.IsMouseVisible = false;
             }
+
+            graphics.SynchronizeWithVerticalRetrace = true;
         }
 
         private void InitGUI()
@@ -91,6 +112,8 @@ namespace GamePlatformer
 
             map.Update(gameTime);
 
+            gameModel.ExecuteModelSystems();
+
             base.Update(gameTime);
         }
 
@@ -114,6 +137,8 @@ namespace GamePlatformer
                 GraphicsDevice.Clear(Color.CornflowerBlue);
 
             map.Draw(gameTime);
+
+            gameModel.ExecuteRenderSystems();
 
             guiManager.Draw(gameTime);
 
