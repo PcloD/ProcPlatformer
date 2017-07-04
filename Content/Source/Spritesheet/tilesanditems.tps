@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.4.0</string>
         <key>fileName</key>
-        <string>C:/Proyectos/GitHub/ProcPlatformer/Content/Source/Spritesheet/spritesheet.tps</string>
+        <string>C:/Proyectos/GitHub/ProcPlatformer/Content/Source/Spritesheet/tilesanditems.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>json-array</string>
         <key>textureFileName</key>
-        <filename>../../Content/Spritesheets/spritesheet.png</filename>
+        <filename>../../Content/Spritesheets/tilesanditems.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -150,7 +150,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../../Content/Spritesheets/spritesheet-atlas.json</filename>
+                <filename>../../Content/Spritesheets/tilesanditems-atlas.json</filename>
             </struct>
         </map>
         <key>multiPack</key>

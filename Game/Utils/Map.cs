@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.TextureAtlases;
@@ -9,13 +8,13 @@ namespace GamePlatformer.Utils
     public class Map
     {
         private SpriteBatch batch;
-        private TextureAtlas textureAtlas;
+        private TextureAtlas tilesAndItemsAtlas;
 
         public Map(GraphicsDevice graphicsDevice, ContentManager contentManager)
         {
             batch = new SpriteBatch(graphicsDevice);
 
-            textureAtlas = contentManager.Load<TextureAtlas>("Spritesheets/spritesheet-atlas");
+            tilesAndItemsAtlas = contentManager.Load<TextureAtlas>("Spritesheets/tilesanditems-atlas");
         }
         
         public void Update(GameTime gameTime)
@@ -25,7 +24,7 @@ namespace GamePlatformer.Utils
 
         public void Draw(GameTime gameTime)
         {
-            var tile = textureAtlas["grassCenter"];
+            var tile = tilesAndItemsAtlas["grassCenter"];
             var tileSize = tile.Width;
 
             batch.Begin();

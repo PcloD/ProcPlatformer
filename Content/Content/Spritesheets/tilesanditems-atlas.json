@@ -2082,10 +2082,10 @@
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "spritesheet.png",
+	"image": "tilesanditems.png",
 	"format": "RGBA8888",
 	"size": {"w":980,"h":1196},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:f276e76e1e92197cd5be7939ed2a614b:1b629eec5c7a84d25dca7ba505f11542:3b9941b64dc26e01047f3ade20509a40$"
+	"smartupdate": "$TexturePacker:SmartUpdate:3a9b84cbe2075f40ecfcb630558974e6:1b629eec5c7a84d25dca7ba505f11542:fe0a8af58700e2bfbd1cf88da9260b3f$"
 }
 }

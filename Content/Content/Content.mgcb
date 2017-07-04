@@ -128,12 +128,7 @@
 /processorParam:TextureFormat=Compressed
 /build:Animations/zombie.png
 
-#begin Spritesheets/spritesheet-atlas.json
-/importer:TexturePackerJsonImporter
-/processor:TexturePackerProcessor
-/build:Spritesheets/spritesheet-atlas.json
-
-#begin Spritesheets/spritesheet.png
+#begin Spritesheets/entities.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -143,5 +138,27 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Spritesheets/spritesheet.png
+/build:Spritesheets/entities.png
+
+#begin Spritesheets/entities-atlas.json
+/importer:TexturePackerJsonImporter
+/processor:TexturePackerProcessor
+/build:Spritesheets/entities-atlas.json
+
+#begin Spritesheets/tilesanditems.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Spritesheets/tilesanditems.png
+
+#begin Spritesheets/tilesanditems-atlas.json
+/importer:TexturePackerJsonImporter
+/processor:TexturePackerProcessor
+/build:Spritesheets/tilesanditems-atlas.json
 

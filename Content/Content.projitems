@@ -14,7 +14,8 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Fonts\impact-32.fnt" />
     <None Include="$(MSBuildThisFileDirectory)Content\Fonts\montserrat-32.fnt" />
     <None Include="$(MSBuildThisFileDirectory)Content\small-font.fnt" />
-    <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\spritesheet.tps" />
+    <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\entities.tps" />
+    <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\tilesanditems.tps" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Content\adventure-gui-atlas.json" />
@@ -28,10 +29,6 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Fonts\montserrat-32_0.png" />
     <None Include="$(MSBuildThisFileDirectory)Content\small-font_0.png" />
     <None Include="$(MSBuildThisFileDirectory)Content\title-screen.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Content\Spritesheets\spritesheet-atlas.json" />
-    <None Include="$(MSBuildThisFileDirectory)Content\Spritesheets\spritesheet.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Items\bomb.png" />
@@ -265,5 +262,66 @@
     <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Tiles\tochLit2.png" />
     <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Tiles\torch.png" />
     <None Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Tiles\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Content\Spritesheets\entities-atlas.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\Spritesheets\entities.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\Spritesheets\tilesanditems-atlas.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\Spritesheets\tilesanditems.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_climb1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_climb2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_duck.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_hurt.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_jump.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_stand.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_swim1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_swim2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_walk1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBeige_walk2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_climb1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_climb2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_duck.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_hurt.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_jump.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_stand.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_swim1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_swim2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_walk1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienBlue_walk2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_climb1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_climb2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_duck.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_hurt.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_jump.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_stand.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_swim1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_swim2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_walk1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienGreen_walk2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_climb1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_climb2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_duck.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_hurt.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_jump.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_stand.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_swim1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_swim2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_walk1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienPink_walk2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_climb1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_climb2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_duck.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_hurt.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_jump.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_stand.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_swim1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_swim2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_walk1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Source\Spritesheet\Entities\Player\alienYellow_walk2.png" />
   </ItemGroup>
 </Project>
