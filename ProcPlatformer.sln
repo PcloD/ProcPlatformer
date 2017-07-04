@@ -11,6 +11,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Content", "Content\Content.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "Libraries\Libraries.csproj", "{E776D2B3-2008-4085-A3B0-6FB9381FB92B}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Content\Content.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
@@ -34,6 +36,10 @@ Global
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E776D2B3-2008-4085-A3B0-6FB9381FB92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E776D2B3-2008-4085-A3B0-6FB9381FB92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E776D2B3-2008-4085-A3B0-6FB9381FB92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E776D2B3-2008-4085-A3B0-6FB9381FB92B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

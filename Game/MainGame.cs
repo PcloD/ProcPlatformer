@@ -1,12 +1,11 @@
-﻿using System;
-using GamePlatformer.Screens;
+﻿using GamePlatformer.Screens;
 using GamePlatformer.Utils;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.BitmapFonts;
-using MonoGame.Extended.TextureAtlases;
-using MonoGame.Extended;
+using Libraries.GUI;
+using Libraries.Input;
 
 namespace GamePlatformer
 {
@@ -60,7 +59,7 @@ namespace GamePlatformer
 
         private void InitGUI()
         {
-            guiManager = new GuiManager(Content, Window, GraphicsDevice, platform, "Content/adventure-gui-skin.json");
+            guiManager = new GuiManager(Content, Window, GraphicsDevice, "Content/adventure-gui-skin.json");
 
             guiManager.RegisterScreen(new TitleScreen(() => lastMetrics ));
 
@@ -107,7 +106,7 @@ namespace GamePlatformer
         {
             base.Draw(gameTime);
 
-            var pointerState = Pointer.GetState();
+            var pointerState = InputPointer.GetState();
 
             if (pointerState.Button == ButtonState.Pressed)
                 GraphicsDevice.Clear(Color.ForestGreen);

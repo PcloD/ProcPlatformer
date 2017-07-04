@@ -1,4 +1,5 @@
-﻿using GamePlatformer.Utils;
+﻿using Libraries.GUI;
+using Libraries.Input;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Gui.Controls;
@@ -10,6 +11,8 @@ namespace GamePlatformer.Screens
     {
         private GuiLabel mainLabel;
         private Func<GraphicsMetrics> graphicsMetricsProvider;
+
+        public object Pointer { get; private set; }
 
         public TitleScreen(Func<GraphicsMetrics> graphicsMetricsProvider) : base("Content/title-screen.json")
         {
@@ -29,7 +32,7 @@ namespace GamePlatformer.Screens
 
         protected override void OnUpdate(GameTime gameTime)
         {
-            var pointerState = Pointer.GetState();
+            var pointerState = InputPointer.GetState();
 
             var metrics = graphicsMetricsProvider();
 
