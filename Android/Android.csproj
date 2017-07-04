@@ -76,6 +76,7 @@
     <AndroidAsset Include="..\Content\Content\title-screen.json">
       <Link>Assets\Content\title-screen.json</Link>
     </AndroidAsset>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
