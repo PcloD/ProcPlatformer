@@ -30,6 +30,26 @@ namespace GamePlatformer.Model.Utils
             return other.x == x && other.y == y;
         }
 
+        public TilePosition AboveTilePosition()
+        {
+            return new TilePosition(x, y - 1);
+        }
+
+        public TilePosition BelowTilePosition()
+        {
+            return new TilePosition(x, y + 1);
+        }
+
+        public TilePosition LeftTilePosition()
+        {
+            return new TilePosition(x - 1, y);
+        }
+
+        public TilePosition RightTilePosition()
+        {
+            return new TilePosition(x + 1, y);
+        }
+
         public IntVector2 ToTopLeftWorldPosition()
         {
             return TilePositionComponent.TransformTilePositionToTopLeftWorldPosition(this);
@@ -37,7 +57,12 @@ namespace GamePlatformer.Model.Utils
 
         public IntVector2 ToCenteredWorldPosition()
         {
-            return TilePositionComponent.TransformTilePositionToWorldCenteredPosition(this);
+            return TilePositionComponent.TransformTilePositionToCenteredWorldPosition(this);
+        }
+
+        public IntVector2 ToBottomMiddleWorldPosition()
+        {
+            return TilePositionComponent.TransformTilePositionToBottomMiddleWorldPosition(this);
         }
 
         public override int GetHashCode()

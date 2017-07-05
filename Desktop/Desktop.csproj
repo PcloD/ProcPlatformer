@@ -118,7 +118,11 @@
       <Link>Content\adventure-gui-skin.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Content\Content\title-screen.json">
+    <None Include="..\Content\Content\Screens\play-screen.json">
+      <Link>Content\play-screen.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Content\Content\Screens\title-screen.json">
       <Link>Content\title-screen.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

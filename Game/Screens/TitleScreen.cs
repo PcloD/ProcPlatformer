@@ -7,7 +7,7 @@ using System;
 
 namespace GamePlatformer.Screens
 {
-    class TitleScreen : FileScreen
+    public class TitleScreen : FileScreen
     {
         private GuiLabel mainLabel;
         private Func<GraphicsMetrics> graphicsMetricsProvider;

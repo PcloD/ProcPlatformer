@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -38,28 +38,40 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Model\GameComponents\AvatarComponent.cs" />
     <Compile Include="Model\GameComponents\MapComponent.cs" />
+    <Compile Include="Model\GameComponents\RigidbodyComponent.cs" />
+    <Compile Include="Model\GameComponents\PlayerAvatarComponent.cs" />
+    <Compile Include="Model\GameComponents\PlayerAvatarInputComponent.cs" />
     <Compile Include="Model\GameComponents\PositionComponent.cs" />
     <Compile Include="Model\GameComponents\SizeComponent.cs" />
     <Compile Include="Model\GameComponents\TileComponent.cs" />
     <Compile Include="Model\GameComponents\TilePositionComponent.cs" />
     <Compile Include="Model\GameModelSystems.cs" />
+    <Compile Include="Model\GameSystems\HandlePlayerAvatarInputSystem.cs" />
     <Compile Include="Model\GameSystems\InitMapSystem.cs" />
+    <Compile Include="Model\GameSystems\MovementSystem.cs" />
     <Compile Include="Model\GameSystems\UpdateSystem.cs" />
     <Compile Include="Model\Tiles\TileDefinition.cs" />
+    <Compile Include="Model\Utils\AvatarUtils.cs" />
     <Compile Include="Model\Utils\IntVector2.cs" />
     <Compile Include="Model\Utils\TilePosition.cs" />
+    <Compile Include="Model\Utils\TileUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generated\Map\Components\MapMapComponent.cs" />
+    <Compile Include="Generated\Game\Components\GamePlayerAvatarComponent.cs" />
+    <Compile Include="Generated\Game\Components\GameAvatarComponent.cs" />
+    <Compile Include="Generated\Game\Components\GameRigidbodyComponent.cs" />
+    <Compile Include="Generated\Input\Components\InputPlayerAvatarInputComponent.cs" />
     <Compile Include="Generated\Game\Components\GamePositionComponent.cs" />
     <Compile Include="Generated\Game\Components\GameSizeComponent.cs" />
     <Compile Include="Generated\Game\Components\GameTileComponent.cs" />
     <Compile Include="Generated\Game\Components\GameTilePositionComponent.cs" />
-    <Compile Include="Generated\Input\InputComponentsLookup.cs" />
-    <Compile Include="Generated\Map\MapComponentsLookup.cs" />
     <Compile Include="Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Generated\Map\MapComponentsLookup.cs" />
+    <Compile Include="Generated\Input\InputComponentsLookup.cs" />
     <Compile Include="Generated\Map\MapAttribute.cs" />
     <Compile Include="Generated\Game\GameAttribute.cs" />
     <Compile Include="Generated\Input\InputAttribute.cs" />

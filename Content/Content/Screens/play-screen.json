@@ -1,0 +1,19 @@
+﻿{
+  "Skin": "Content/adventure-gui-skin.json",
+  "Controls": [
+	{
+		"Type": "GuiCanvas",
+		"Name": "MainCanvas",
+		"Controls": [
+			{
+				"Type": "GuiLabel",
+				"Name": "MainLabel",
+				"Style": "label",
+				"Text": "",
+				"Width": "150",
+				"Height": "100"
+			}
+		]
+	}
+  ]
+}

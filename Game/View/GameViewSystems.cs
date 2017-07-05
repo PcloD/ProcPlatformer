@@ -6,6 +6,7 @@ using MonoGame.Extended.TextureAtlases;
 using MonoGame.Extended;
 using MonoGame.Extended.Sprites;
 using GamePlatformer.View.Utils;
+using Microsoft.Xna.Framework;
 
 namespace GamePlatformer.View
 {
@@ -14,6 +15,7 @@ namespace GamePlatformer.View
         private Systems systems;
         private SpriteBatch spriteBatch;
         private TextureAtlas tilesAndItemsAtlas;
+        private TextureAtlas entitiesAtlas;
         private Camera2D camera;
 
         private GameContext gameContext;
@@ -36,20 +38,24 @@ namespace GamePlatformer.View
             spriteBatch = new SpriteBatch(graphicsDevice);
 
             tilesAndItemsAtlas = contentManager.Load<TextureAtlas>("Spritesheets/tilesanditems-atlas");
+            entitiesAtlas = contentManager.Load<TextureAtlas>("Spritesheets/entities-atlas");
         }
 
         private void InitSystems()
         {
             systems = new Systems()
-                .Add(new TileRenderSystem(gameContext, spriteBatch, tilesAndItemsAtlas));
+                .Add(new TileRenderSystem(gameContext, spriteBatch, tilesAndItemsAtlas))
+                .Add(new AvatarRenderSystem(gameContext, spriteBatch, entitiesAtlas));
 
             systems.Initialize();
 
-            camera.LookAt(mapContext.map.startTilePosition.ToCenteredWorldPosition().ToVector2());
+            camera.LookAt(new Vector2(gameContext.playerAvatarEntity.position.x, gameContext.playerAvatarEntity.position.y));
         }
 
         public void ExecuteSystems()
         {
+            camera.LookAt(new Vector2(gameContext.playerAvatarEntity.position.x, gameContext.playerAvatarEntity.position.y));
+
             spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
             {
                 systems.Execute();

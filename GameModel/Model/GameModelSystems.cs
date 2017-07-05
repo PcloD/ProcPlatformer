@@ -30,7 +30,9 @@ namespace GamePlatformer.Model
         private void InitSystems()
         { 
             systems = new Systems()
-                .Add(new InitMapSystem(tileDefinitions))
+                .Add(new InitMapSystem(tileDefinitions, Contexts.sharedInstance.game, Contexts.sharedInstance.map))
+                .Add(new HandlePlayerAvatarInputSystem(Contexts.sharedInstance.input, Contexts.sharedInstance.game))
+                .Add(new MovementSystem(Contexts.sharedInstance.game))
                 .Add(new UpdateSystem());
 
             systems.Initialize();

@@ -16,9 +16,6 @@ namespace GamePlatformer
     {
         private GraphicsDeviceManager graphics;
 
-        private SpriteBatch batch;
-        private BitmapFont font;
-
         private IPlatform platform;
 
         private GuiManager guiManager;
@@ -81,10 +78,6 @@ namespace GamePlatformer
 
         protected override void LoadContent()
         {
-            batch = new SpriteBatch(GraphicsDevice);
-
-            font = Content.Load<BitmapFont>("small-font");
-
             InitGUI();
 
             InitGameView();
@@ -95,8 +88,9 @@ namespace GamePlatformer
             guiManager = new GuiManager(Content, Window, GraphicsDevice, "Content/adventure-gui-skin.json");
 
             guiManager.RegisterScreen(new TitleScreen(() => lastMetrics));
+            guiManager.RegisterScreen(new PlayScreen(() => lastMetrics));
 
-            guiManager.ShowScreen<TitleScreen>();
+            guiManager.ShowScreen<PlayScreen>();
         }
 
         private void InitGameView()
@@ -111,9 +105,28 @@ namespace GamePlatformer
 
             guiManager.Update(gameTime);
 
+            DispatchPlayerAvatarInput();
+
             gameModel.ExecuteSystems();
 
             base.Update(gameTime);
+        }
+
+        private void DispatchPlayerAvatarInput()
+        {
+            var direction = 0;
+            var jump = false;
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Left))
+                direction--;
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Right))
+                direction++;
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) || Keyboard.GetState().IsKeyDown(Keys.Space))
+                jump = true;
+
+            Contexts.sharedInstance.input.CreateEntity().AddPlayerAvatarInput(direction, jump);
         }
 
         private bool IsExitCombinationExecuted()
@@ -128,25 +141,13 @@ namespace GamePlatformer
         {
             base.Draw(gameTime);
 
-            var pointerState = InputPointer.GetState();
-
-            if (pointerState.Button == ButtonState.Pressed)
-                GraphicsDevice.Clear(Color.ForestGreen);
-            else
-                GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             gameView.ExecuteSystems();
 
             guiManager.Draw(gameTime);
 
             lastMetrics = GraphicsDevice.Metrics;
-
-
-            //guiRenderer.Begin();
-            //{
-            //    guiRenderer.DrawText(font, "Hello World: " + guiCamera.ScreenToWorld(pointerState.Position.ToVector2()), guiCamera.WorldToScreen(0, 0), Color.White);
-            //}
-            //guiRenderer.End();
         }
     }
 }

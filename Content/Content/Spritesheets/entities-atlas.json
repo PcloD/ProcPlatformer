@@ -1,7 +1,7 @@
 {"frames": [
 
 {
-	"filename": "Player/alienBeige.png",
+	"filename": "alienBeige.png",
 	"frame": {"x":132,"y":260,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -10,7 +10,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_climb1.png",
+	"filename": "alienBeige_climb1.png",
 	"frame": {"x":138,"y":540,"w":66,"h":95},
 	"rotated": false,
 	"trimmed": false,
@@ -19,7 +19,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_climb2.png",
+	"filename": "alienBeige_climb2.png",
 	"frame": {"x":401,"y":445,"w":66,"h":95},
 	"rotated": false,
 	"trimmed": false,
@@ -28,7 +28,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_duck.png",
+	"filename": "alienBeige_duck.png",
 	"frame": {"x":206,"y":0,"w":67,"h":72},
 	"rotated": false,
 	"trimmed": false,
@@ -37,7 +37,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_hurt.png",
+	"filename": "alienBeige_hurt.png",
 	"frame": {"x":66,"y":352,"w":67,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -46,7 +46,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_jump.png",
+	"filename": "alienBeige_jump.png",
 	"frame": {"x":66,"y":445,"w":66,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -55,7 +55,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_stand.png",
+	"filename": "alienBeige_stand.png",
 	"frame": {"x":0,"y":352,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -64,7 +64,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_swim1.png",
+	"filename": "alienBeige_swim1.png",
 	"frame": {"x":280,"y":636,"w":69,"h":98},
 	"rotated": false,
 	"trimmed": false,
@@ -73,7 +73,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_swim2.png",
+	"filename": "alienBeige_swim2.png",
 	"frame": {"x":349,"y":636,"w":70,"h":100},
 	"rotated": false,
 	"trimmed": false,
@@ -82,7 +82,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_walk1.png",
+	"filename": "alienBeige_walk1.png",
 	"frame": {"x":331,"y":352,"w":68,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -91,7 +91,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBeige_walk2.png",
+	"filename": "alienBeige_walk2.png",
 	"frame": {"x":0,"y":636,"w":70,"h":96},
 	"rotated": false,
 	"trimmed": false,
@@ -100,7 +100,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue.png",
+	"filename": "alienBlue.png",
 	"frame": {"x":133,"y":352,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -109,7 +109,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_climb1.png",
+	"filename": "alienBlue_climb1.png",
 	"frame": {"x":199,"y":352,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -118,7 +118,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_climb2.png",
+	"filename": "alienBlue_climb2.png",
 	"frame": {"x":265,"y":260,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -127,7 +127,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_duck.png",
+	"filename": "alienBlue_duck.png",
 	"frame": {"x":273,"y":0,"w":67,"h":72},
 	"rotated": false,
 	"trimmed": false,
@@ -136,7 +136,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_hurt.png",
+	"filename": "alienBlue_hurt.png",
 	"frame": {"x":198,"y":260,"w":67,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -145,7 +145,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_jump.png",
+	"filename": "alienBlue_jump.png",
 	"frame": {"x":335,"y":445,"w":66,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -154,7 +154,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_stand.png",
+	"filename": "alienBlue_stand.png",
 	"frame": {"x":331,"y":260,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -163,7 +163,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_swim1.png",
+	"filename": "alienBlue_swim1.png",
 	"frame": {"x":0,"y":540,"w":69,"h":95},
 	"rotated": false,
 	"trimmed": false,
@@ -172,7 +172,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_swim2.png",
+	"filename": "alienBlue_swim2.png",
 	"frame": {"x":210,"y":636,"w":70,"h":97},
 	"rotated": false,
 	"trimmed": false,
@@ -181,7 +181,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_walk1.png",
+	"filename": "alienBlue_walk1.png",
 	"frame": {"x":0,"y":445,"w":66,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -190,7 +190,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienBlue_walk2.png",
+	"filename": "alienBlue_walk2.png",
 	"frame": {"x":273,"y":540,"w":67,"h":96},
 	"rotated": false,
 	"trimmed": false,
@@ -199,7 +199,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen.png",
+	"filename": "alienGreen.png",
 	"frame": {"x":265,"y":352,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -208,7 +208,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_climb1.png",
+	"filename": "alienGreen_climb1.png",
 	"frame": {"x":397,"y":260,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -217,7 +217,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_climb2.png",
+	"filename": "alienGreen_climb2.png",
 	"frame": {"x":66,"y":260,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -226,7 +226,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_duck.png",
+	"filename": "alienGreen_duck.png",
 	"frame": {"x":68,"y":0,"w":69,"h":71},
 	"rotated": false,
 	"trimmed": false,
@@ -235,7 +235,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_hurt.png",
+	"filename": "alienGreen_hurt.png",
 	"frame": {"x":205,"y":168,"w":69,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -244,7 +244,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_jump.png",
+	"filename": "alienGreen_jump.png",
 	"frame": {"x":200,"y":445,"w":67,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -253,7 +253,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_stand.png",
+	"filename": "alienGreen_stand.png",
 	"frame": {"x":139,"y":168,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -262,7 +262,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_swim1.png",
+	"filename": "alienGreen_swim1.png",
 	"frame": {"x":69,"y":540,"w":69,"h":95},
 	"rotated": false,
 	"trimmed": false,
@@ -271,7 +271,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_swim2.png",
+	"filename": "alienGreen_swim2.png",
 	"frame": {"x":70,"y":636,"w":70,"h":97},
 	"rotated": false,
 	"trimmed": false,
@@ -280,7 +280,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_walk1.png",
+	"filename": "alienGreen_walk1.png",
 	"frame": {"x":267,"y":445,"w":68,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -289,7 +289,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienGreen_walk2.png",
+	"filename": "alienGreen_walk2.png",
 	"frame": {"x":410,"y":540,"w":70,"h":96},
 	"rotated": false,
 	"trimmed": false,
@@ -298,7 +298,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink.png",
+	"filename": "alienPink.png",
 	"frame": {"x":274,"y":168,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -307,7 +307,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_climb1.png",
+	"filename": "alienPink_climb1.png",
 	"frame": {"x":340,"y":168,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -316,7 +316,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_climb2.png",
+	"filename": "alienPink_climb2.png",
 	"frame": {"x":0,"y":260,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -325,7 +325,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_duck.png",
+	"filename": "alienPink_duck.png",
 	"frame": {"x":137,"y":0,"w":69,"h":71},
 	"rotated": false,
 	"trimmed": false,
@@ -334,7 +334,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_hurt.png",
+	"filename": "alienPink_hurt.png",
 	"frame": {"x":70,"y":168,"w":69,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -343,7 +343,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_jump.png",
+	"filename": "alienPink_jump.png",
 	"frame": {"x":399,"y":352,"w":67,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -352,7 +352,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_stand.png",
+	"filename": "alienPink_stand.png",
 	"frame": {"x":406,"y":168,"w":66,"h":92},
 	"rotated": false,
 	"trimmed": false,
@@ -361,7 +361,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_swim1.png",
+	"filename": "alienPink_swim1.png",
 	"frame": {"x":204,"y":540,"w":69,"h":95},
 	"rotated": false,
 	"trimmed": false,
@@ -370,7 +370,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_swim2.png",
+	"filename": "alienPink_swim2.png",
 	"frame": {"x":140,"y":636,"w":70,"h":97},
 	"rotated": false,
 	"trimmed": false,
@@ -379,7 +379,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_walk1.png",
+	"filename": "alienPink_walk1.png",
 	"frame": {"x":132,"y":445,"w":68,"h":93},
 	"rotated": false,
 	"trimmed": false,
@@ -388,7 +388,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienPink_walk2.png",
+	"filename": "alienPink_walk2.png",
 	"frame": {"x":340,"y":540,"w":70,"h":96},
 	"rotated": false,
 	"trimmed": false,
@@ -397,7 +397,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow.png",
+	"filename": "alienYellow.png",
 	"frame": {"x":66,"y":82,"w":66,"h":82},
 	"rotated": false,
 	"trimmed": false,
@@ -406,7 +406,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_climb1.png",
+	"filename": "alienYellow_climb1.png",
 	"frame": {"x":409,"y":0,"w":66,"h":82},
 	"rotated": false,
 	"trimmed": false,
@@ -415,7 +415,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_climb2.png",
+	"filename": "alienYellow_climb2.png",
 	"frame": {"x":0,"y":82,"w":66,"h":82},
 	"rotated": false,
 	"trimmed": false,
@@ -424,7 +424,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_duck.png",
+	"filename": "alienYellow_duck.png",
 	"frame": {"x":0,"y":0,"w":68,"h":67},
 	"rotated": false,
 	"trimmed": false,
@@ -433,7 +433,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_hurt.png",
+	"filename": "alienYellow_hurt.png",
 	"frame": {"x":340,"y":0,"w":69,"h":81},
 	"rotated": false,
 	"trimmed": false,
@@ -442,7 +442,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_jump.png",
+	"filename": "alienYellow_jump.png",
 	"frame": {"x":198,"y":82,"w":67,"h":83},
 	"rotated": false,
 	"trimmed": false,
@@ -451,7 +451,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_stand.png",
+	"filename": "alienYellow_stand.png",
 	"frame": {"x":132,"y":82,"w":66,"h":82},
 	"rotated": false,
 	"trimmed": false,
@@ -460,7 +460,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_swim1.png",
+	"filename": "alienYellow_swim1.png",
 	"frame": {"x":333,"y":82,"w":69,"h":85},
 	"rotated": false,
 	"trimmed": false,
@@ -469,7 +469,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_swim2.png",
+	"filename": "alienYellow_swim2.png",
 	"frame": {"x":0,"y":168,"w":70,"h":87},
 	"rotated": false,
 	"trimmed": false,
@@ -478,7 +478,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_walk1.png",
+	"filename": "alienYellow_walk1.png",
 	"frame": {"x":265,"y":82,"w":68,"h":83},
 	"rotated": false,
 	"trimmed": false,
@@ -487,7 +487,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "Player/alienYellow_walk2.png",
+	"filename": "alienYellow_walk2.png",
 	"frame": {"x":402,"y":82,"w":70,"h":86},
 	"rotated": false,
 	"trimmed": false,
@@ -502,6 +502,6 @@
 	"format": "RGBA8888",
 	"size": {"w":480,"h":736},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:e94fc3c73554fbd1e0b08ea9d9215971:15355d98d258d48caa1ccd0170781ce7:1915fab0f57f7964f99185443b7c70ba$"
+	"smartupdate": "$TexturePacker:SmartUpdate:5a3e2a42efb21e3224e5f28c91919d1e:15355d98d258d48caa1ccd0170781ce7:1915fab0f57f7964f99185443b7c70ba$"
 }
 }

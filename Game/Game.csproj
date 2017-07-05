@@ -39,8 +39,10 @@
   <ItemGroup>
     <Compile Include="MainGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\PlayScreen.cs" />
     <Compile Include="Screens\TitleScreen.cs" />
     <Compile Include="Utils\IPlatform.cs" />
+    <Compile Include="View\GameSystems\AvatarRenderSystem.cs" />
     <Compile Include="View\GameViewSystems.cs" />
     <Compile Include="View\GameSystems\TileRenderSystem.cs" />
     <Compile Include="View\Utils\IntVector2Extensions.cs" />

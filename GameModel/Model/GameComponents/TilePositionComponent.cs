@@ -1,6 +1,7 @@
 ﻿using Entitas;
 using GamePlatformer.Model.Utils;
 using Entitas.CodeGeneration.Attributes;
+using System;
 
 namespace GamePlatformer.Model.GameComponents
 {
@@ -24,7 +25,15 @@ namespace GamePlatformer.Model.GameComponents
         {
             get
             {
-                return TransformTilePositionToWorldCenteredPosition(tilePosition);
+                return TransformTilePositionToCenteredWorldPosition(tilePosition);
+            }
+        }
+
+        public IntVector2 BottomMiddleWorldPosition
+        {
+            get
+            {
+                return TransformTilePositionToBottomMiddleWorldPosition(tilePosition);
             }
         }
 
@@ -35,13 +44,22 @@ namespace GamePlatformer.Model.GameComponents
 
         static public IntVector2 TransformTilePositionToTopLeftWorldPosition(TilePosition tilePosition)
         {
-            return new IntVector2(tilePosition.x * TileSize + TileSize / 2, tilePosition.y * TileSize + TileSize / 2);
+            return new IntVector2(tilePosition.x * TileSize, tilePosition.y * TileSize);
         }
 
-        static public IntVector2 TransformTilePositionToWorldCenteredPosition(TilePosition tilePosition)
+        static public IntVector2 TransformTilePositionToCenteredWorldPosition(TilePosition tilePosition)
         {
             return new IntVector2(tilePosition.x * TileSize + TileSize / 2, tilePosition.y * TileSize + TileSize / 2);
         }
 
+        static public IntVector2 TransformTilePositionToBottomMiddleWorldPosition(TilePosition tilePosition)
+        {
+            return new IntVector2(tilePosition.x * TileSize + TileSize / 2, tilePosition.y * TileSize + TileSize - 1);
+        }
+
+        static public TilePosition TransformWorldPositionToTilePosition(IntVector2 worldPosition)
+        {
+            return new TilePosition(worldPosition.x / TileSize, worldPosition.y / TileSize);
+        }
     }
 }

@@ -73,7 +73,10 @@
     <AndroidAsset Include="..\Content\Content\adventure-gui-skin.json">
       <Link>Assets\Content\adventure-gui-skin.json</Link>
     </AndroidAsset>
-    <AndroidAsset Include="..\Content\Content\title-screen.json">
+    <AndroidAsset Include="..\Content\Content\Screens\play-screen.json">
+      <Link>Assets\Content\play-screen.json</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Content\Content\Screens\title-screen.json">
       <Link>Assets\Content\title-screen.json</Link>
     </AndroidAsset>
     <None Include="app.config" />

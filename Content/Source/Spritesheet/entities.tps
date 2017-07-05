@@ -509,7 +509,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>Entities</filename>
+            <filename>Entities/Player</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
