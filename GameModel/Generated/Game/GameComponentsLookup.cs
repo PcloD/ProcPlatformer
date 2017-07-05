@@ -9,14 +9,23 @@
 public static class GameComponentsLookup {
 
     public const int Position = 0;
+    public const int Size = 1;
+    public const int Tile = 2;
+    public const int TilePosition = 3;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 4;
 
     public static readonly string[] componentNames = {
-        "Position"
+        "Position",
+        "Size",
+        "Tile",
+        "TilePosition"
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(GamePlatformer.Model.GameComponents.PositionComponent)
+        typeof(GamePlatformer.Model.GameComponents.PositionComponent),
+        typeof(GamePlatformer.Model.GameComponents.SizeComponent),
+        typeof(GamePlatformer.Model.GameComponents.TileComponent),
+        typeof(GamePlatformer.Model.GameComponents.TilePositionComponent)
     };
 }

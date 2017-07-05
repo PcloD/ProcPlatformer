@@ -8,27 +8,27 @@
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public GamePlatformer.Model.GameComponents.PositionComponent position { get { return (GamePlatformer.Model.GameComponents.PositionComponent)GetComponent(GameComponentsLookup.Position); } }
-    public bool hasPosition { get { return HasComponent(GameComponentsLookup.Position); } }
+    public GamePlatformer.Model.GameComponents.SizeComponent size { get { return (GamePlatformer.Model.GameComponents.SizeComponent)GetComponent(GameComponentsLookup.Size); } }
+    public bool hasSize { get { return HasComponent(GameComponentsLookup.Size); } }
 
-    public void AddPosition(int newX, int newY) {
-        var index = GameComponentsLookup.Position;
-        var component = CreateComponent<GamePlatformer.Model.GameComponents.PositionComponent>(index);
+    public void AddSize(int newX, int newY) {
+        var index = GameComponentsLookup.Size;
+        var component = CreateComponent<GamePlatformer.Model.GameComponents.SizeComponent>(index);
         component.x = newX;
         component.y = newY;
         AddComponent(index, component);
     }
 
-    public void ReplacePosition(int newX, int newY) {
-        var index = GameComponentsLookup.Position;
-        var component = CreateComponent<GamePlatformer.Model.GameComponents.PositionComponent>(index);
+    public void ReplaceSize(int newX, int newY) {
+        var index = GameComponentsLookup.Size;
+        var component = CreateComponent<GamePlatformer.Model.GameComponents.SizeComponent>(index);
         component.x = newX;
         component.y = newY;
         ReplaceComponent(index, component);
     }
 
-    public void RemovePosition() {
-        RemoveComponent(GameComponentsLookup.Position);
+    public void RemoveSize() {
+        RemoveComponent(GameComponentsLookup.Size);
     }
 }
 
@@ -42,17 +42,17 @@ public partial class GameEntity {
 //------------------------------------------------------------------------------
 public sealed partial class GameMatcher {
 
-    static Entitas.IMatcher<GameEntity> _matcherPosition;
+    static Entitas.IMatcher<GameEntity> _matcherSize;
 
-    public static Entitas.IMatcher<GameEntity> Position {
+    public static Entitas.IMatcher<GameEntity> Size {
         get {
-            if (_matcherPosition == null) {
-                var matcher = (Entitas.Matcher<GameEntity>)Entitas.Matcher<GameEntity>.AllOf(GameComponentsLookup.Position);
+            if (_matcherSize == null) {
+                var matcher = (Entitas.Matcher<GameEntity>)Entitas.Matcher<GameEntity>.AllOf(GameComponentsLookup.Size);
                 matcher.componentNames = GameComponentsLookup.componentNames;
-                _matcherPosition = matcher;
+                _matcherSize = matcher;
             }
 
-            return _matcherPosition;
+            return _matcherSize;
         }
     }
 }

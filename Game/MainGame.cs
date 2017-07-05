@@ -8,6 +8,7 @@ using Libraries.GUI;
 using Libraries.Input;
 using System;
 using GamePlatformer.Model;
+using GamePlatformer.View;
 
 namespace GamePlatformer
 {
@@ -24,9 +25,9 @@ namespace GamePlatformer
 
         private GraphicsMetrics lastMetrics;
 
-        private Map map;
+        private GameModelSystems gameModel;
 
-        private GameModel gameModel;
+        private GameViewSystems gameView;
 
         public MainGame(IPlatform platform)
         {
@@ -43,9 +44,9 @@ namespace GamePlatformer
 
         private void InitGameModel()
         {
-            gameModel = new GameModel();
+            gameModel = new GameModelSystems();
         }
-
+        
         private void InitTime()
         {
             IsFixedTimeStep = true;
@@ -78,15 +79,6 @@ namespace GamePlatformer
             graphics.SynchronizeWithVerticalRetrace = true;
         }
 
-        private void InitGUI()
-        {
-            guiManager = new GuiManager(Content, Window, GraphicsDevice, "Content/adventure-gui-skin.json");
-
-            guiManager.RegisterScreen(new TitleScreen(() => lastMetrics ));
-
-            guiManager.ShowScreen<TitleScreen>();
-        }
-
         protected override void LoadContent()
         {
             batch = new SpriteBatch(GraphicsDevice);
@@ -95,12 +87,21 @@ namespace GamePlatformer
 
             InitGUI();
 
-            InitMap();
+            InitGameView();
         }
 
-        private void InitMap()
+        private void InitGUI()
         {
-            map = new Map(GraphicsDevice, Content);
+            guiManager = new GuiManager(Content, Window, GraphicsDevice, "Content/adventure-gui-skin.json");
+
+            guiManager.RegisterScreen(new TitleScreen(() => lastMetrics));
+
+            guiManager.ShowScreen<TitleScreen>();
+        }
+
+        private void InitGameView()
+        {
+            gameView = new GameViewSystems(Contexts.sharedInstance.game, Contexts.sharedInstance.map, graphics.GraphicsDevice, Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -110,9 +111,7 @@ namespace GamePlatformer
 
             guiManager.Update(gameTime);
 
-            map.Update(gameTime);
-
-            gameModel.ExecuteModelSystems();
+            gameModel.ExecuteSystems();
 
             base.Update(gameTime);
         }
@@ -136,9 +135,7 @@ namespace GamePlatformer
             else
                 GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            map.Draw(gameTime);
-
-            gameModel.ExecuteRenderSystems();
+            gameView.ExecuteSystems();
 
             guiManager.Draw(gameTime);
 

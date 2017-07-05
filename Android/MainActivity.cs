@@ -1,7 +1,6 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Views;
 using Microsoft.Xna.Framework;
 
 namespace GamePlatformer.Android
@@ -20,7 +19,7 @@ namespace GamePlatformer.Android
         {
             base.OnCreate(bundle);
             var g = new MainGame(new AndroidPlatform(this));
-            SetContentView((View)g.Services.GetService(typeof(View)));
+            SetContentView((global::Android.Views.View)g.Services.GetService(typeof(global::Android.Views.View)));
             g.Run();
         }
     }

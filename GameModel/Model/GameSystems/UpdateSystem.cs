@@ -1,6 +1,4 @@
-﻿
-using System;
-using Entitas;
+﻿using Entitas;
 
 namespace GamePlatformer.Model.GameSystems
 {
